@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from app.auth import verify_token
+from app.web_worker import take_screenshot
 
 app = FastAPI(title="phishnet API", version="1.0.0")
 
@@ -34,7 +35,7 @@ async def analyze(
     email = user.get("email")
 
 
-    screenshot_b64 = "placeholder_screenshot"
+    screenshot_b64 = await take_screenshot(request.url)
     vt_stats = {"malicious": 0, "suspicious": 0, "harmless": 0}
     ai_report = "AI analysis not yet connected"
 
