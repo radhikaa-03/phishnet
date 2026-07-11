@@ -21,7 +21,7 @@ class AnalyzeRequest(BaseModel):
 # confirms that server is running
 @app.get("/health")
 async def health_check():
-    return {"status": "ok", "message": "phishnet API is running"}
+    return {"status": "ok", "message": "phishnet API is running successfully"}
 
 
 # main analysis route 
