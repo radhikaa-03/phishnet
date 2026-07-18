@@ -3,6 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from app.auth import verify_token
 from app.web_worker import take_screenshot
+import asyncio
+import sys
+
+if sys.platform == "windows":
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 app = FastAPI(title="phishnet API", version="1.0.0")
 
