@@ -1,7 +1,10 @@
 import asyncio
 import base64
+import sys
 from playwright.async_api import async_playwright
 
+if sys.platform == "windows":
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 async def take_screenshot(url: str) -> str:
 
