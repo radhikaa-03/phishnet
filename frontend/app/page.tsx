@@ -41,7 +41,7 @@ export default function Home() {
     try {
       const token = await user!.getIdToken();
 
-      const response = await fetch("http://localhost:8000/analyze", {
+      const response = await fetch("https://phishnet-vbqi.onrender.com/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
