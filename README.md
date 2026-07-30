@@ -16,6 +16,12 @@ A phishing detection tool- You paste a suspicious URL or a sketchy email you rec
 
 ---
 
+## live demo
+frontend → https://phishnet-delta.vercel.app  
+backend → https://phishnet-vbqi.onrender.com
+
+---
+
 ## stack
 
 - **frontend** — Next.js + Tailwind CSS
