@@ -1,6 +1,6 @@
 # phishnet 
 
-A phishing detection tool- You paste a suspicious URL or a sketchy email you received, and it tells you whether it's safe, suspicious, or malicious — and explains why in plain English.
+A phishing detection tool- You paste a suspicious URL or a sketchy email you received, and it tells you whether it's safe, suspicious, or malicious — and explains why
 
 ---
 
