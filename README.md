@@ -91,9 +91,3 @@ fill in `.env.local` with your Firebase web config (from Firebase console → pr
 
 ---
 
-## one thing worth noting
-
-Playwright's async mode doesn't work well with FastAPI on Windows because of how the event loop works. fixed it by running Playwright's sync API inside a thread pool executor — lets it run without blocking the async server.
-
----
-
