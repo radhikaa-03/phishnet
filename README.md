@@ -26,8 +26,8 @@ backend → https://phishnet-vbqi.onrender.com
 
 - **frontend** — Next.js + Tailwind CSS
 - **backend** — FastAPI (Python)
-- **auth** — Firebase (Google Sign-In) + JWT verification
-- **browser automation** — Playwright (headless Chromium)
+- **auth** — Firebase + JWT verification
+- **browser automation** — Playwright 
 - **threat intel** — VirusTotal API v3
 - **AI** — Groq API (LLaMA 3.3 70B)
 - **containerization** — Docker
